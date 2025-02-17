@@ -17,7 +17,7 @@ export function HeroSection() {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-background/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-background/10" />
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">

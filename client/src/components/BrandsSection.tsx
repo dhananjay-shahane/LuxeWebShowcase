@@ -28,7 +28,7 @@ export function BrandsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-[#e1ff80] rounded-3xl p-12 text-black"
+          className="bg-[#e1ff80] rounded-3xl p-12 text-black relative overflow-hidden"
         >
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -62,12 +62,13 @@ export function BrandsSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex-1 bg-white/10 rounded-full px-4 py-2 text-white">
-                    <div className="flex items-center gap-2">
+                {/* Search Header */}
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-1">
+                    <div className="bg-white rounded-lg px-4 py-3 flex items-center gap-3">
                       <span>Creator Search</span>
-                      <span className="text-white/60">|</span>
-                      <span className="text-white/60">#filters</span>
+                      <span className="text-gray-400">|</span>
+                      <span className="text-gray-400">#festivals</span>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -78,24 +79,35 @@ export function BrandsSection() {
 
                 {/* Creator Cards */}
                 <div className="space-y-3">
-                  {[1, 2, 3].map((i) => (
+                  {[
+                    { name: "Maribelle", type: "Travel • Fitness • Fashion • Beauty" },
+                    { name: "Van Holmes", type: "Welcome to my world!" },
+                    { name: "Timeless Trinity", type: "Model | Mentor | Mom | Grandma" },
+                    { name: "Shae Hall", type: "Beauty, My life, Self improvement" }
+                  ].map((creator, i) => (
                     <motion.div 
-                      key={i}
+                      key={creator.name}
                       initial={{ opacity: 0, x: 20 }}
                       whileInView={{ opacity: 1, x: 0 }}
+                      whileHover={{ scale: 1.02, x: 10 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: 0.6 + (i * 0.1) }}
-                      className="bg-white/5 rounded-lg p-4 flex items-center gap-4"
+                      transition={{ 
+                        duration: 0.4, 
+                        delay: 0.6 + (i * 0.1),
+                        type: "spring",
+                        stiffness: 300
+                      }}
+                      className="bg-white/5 hover:bg-white/10 rounded-lg p-4 flex items-center gap-4 cursor-pointer group"
                     >
                       <div className="w-10 h-10 bg-white/10 rounded-full" />
-                      <div className="flex-1">
-                        <div className="h-2 w-24 bg-white/20 rounded-full" />
-                        <div className="h-2 w-32 bg-white/10 rounded-full mt-2" />
+                      <div className="flex-1 min-w-0">
+                        <div className="text-white font-medium truncate">{creator.name}</div>
+                        <div className="text-white/60 text-sm truncate">{creator.type}</div>
                       </div>
-                      <div className="flex gap-3">
-                        <div className="text-white/80">80.7K</div>
-                        <div className="text-white/80">6.7%</div>
-                        <div className="text-white/80">9K</div>
+                      <div className="flex gap-4 text-white/80">
+                        <span>80.7K</span>
+                        <span>6.7%</span>
+                        <span>9K</span>
                       </div>
                     </motion.div>
                   ))}

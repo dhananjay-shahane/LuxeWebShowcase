@@ -6,7 +6,7 @@ export function ReadyToStartSection() {
   return (
     <section className="py-24 bg-black relative">
       <div className="container mx-auto px-4">
-        <div className="max-w-[1200px] mx-auto relative overflow-hidden rounded-[2rem]">
+        <div className="mx-auto relative overflow-hidden h-[80vh] flex justify-center items-center">
           {/* Background Video */}
           <video 
             autoPlay 
@@ -19,7 +19,7 @@ export function ReadyToStartSection() {
           </video>
 
           {/* Content */}
-          <div className="relative z-10 min-h-[400px] flex flex-col items-center justify-center p-16 text-center">
+          <div className="relative z-10 min-h-[400px] flex flex-col items-center justify-center md:p-[120px] p-[50px]  text-center border-yellow-200 border-2 rounded-[2rem]">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export function ReadyToStartSection() {
             >
               <Button 
                 size="lg" 
-                className="bg-[#E8FF81] hover:bg-[#E8FF81]/90 text-black rounded-[2rem] px-12 py-6 text-lg font-medium transition-transform duration-300 hover:scale-105"
+                className="absolute bottom-[-27px] left-1/2 transform -translate-x-1/2  bg-[#E8FF81] hover:bg-[#E8FF81]/90 text-black rounded-[2rem] px-16 py-8 text-lg font-medium transition-transform duration-300 hover:scale-105"
               >
                 Get a demo
               </Button>

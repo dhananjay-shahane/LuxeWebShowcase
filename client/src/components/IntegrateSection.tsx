@@ -20,7 +20,7 @@ const item = {
 
 export function IntegrateSection() {
   return (
-    <section className="bg-[#1a1f6f] text-white py-32 px-4">
+    <section className="bg-[#1a237e]/70 text-white py-32 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,6 @@ import { BrandsSection } from "@/components/BrandsSection";
 import { ShoppingSection } from "@/components/ShoppingSection";
 import { IntegrateSection } from "@/components/IntegrateSection";
 import { WhoWeHelpSection } from "@/components/WhoWeHelpSection";
-import { WhatsNewSection } from "@/components/WhatsNewSection";
 import { ReadyToStartSection } from "@/components/ReadyToStartSection";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         <ShoppingSection />
         <IntegrateSection />
         <WhoWeHelpSection />
-        <WhatsNewSection />
         <ReadyToStartSection />
       </main>
     </div>

@@ -6,7 +6,7 @@ export function ReadyToStartSection() {
   return (
     <section className="py-24 bg-black relative">
       <div className="container mx-auto px-4">
-        <div className="max-w-[1200px] mx-auto relative overflow-hidden rounded-3xl">
+        <div className="max-w-[1200px] mx-auto relative overflow-hidden rounded-[2rem]">
           {/* Background Video */}
           <video 
             autoPlay 
@@ -37,7 +37,7 @@ export function ReadyToStartSection() {
             >
               <Button 
                 size="lg" 
-                className="bg-[#E8FF81] hover:bg-[#E8FF81]/90 text-black rounded-full px-8 py-6 text-lg font-semibold"
+                className="bg-[#E8FF81] hover:bg-[#E8FF81]/90 text-black rounded-[2rem] px-12 py-6 text-lg font-medium transition-transform duration-300 hover:scale-105"
               >
                 Get a demo
               </Button>

@@ -80,7 +80,7 @@ export function WhoWeHelpSection() {
               {testimonials.map((item, index) => (
                 <div
                   key={index}
-                  className="w-[350px]"
+                  className="w-[350px] carousel-item"
                   onMouseEnter={() => setActiveSlide(index)}
                 >
                   <Card className={`h-[400px] ${item.bgColor} ${item.textColor} p-6 flex flex-col justify-between overflow-hidden relative rounded-xl transition-transform duration-300 hover:scale-[1.02]`}>
@@ -147,8 +147,8 @@ export function WhoWeHelpSection() {
                   activeSlide === index ? "bg-white" : "bg-gray-600"
                 }`}
                 onClick={() => {
-                  const element = document.querySelector(`.w-[350px]:nth-child(${index + 1})`);
-                  element?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                  const elements = document.querySelectorAll('.carousel-item');
+                  elements[index]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
                   setActiveSlide(index);
                 }}
               />

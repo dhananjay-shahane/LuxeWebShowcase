@@ -82,8 +82,8 @@ export function WhatsNewSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-0" />
-            <CarouselNext className="right-0" />
+            <CarouselPrevious className="absolute left-0 -translate-x-12 hover:bg-white hover:text-black" />
+            <CarouselNext className="absolute right-0 translate-x-12 hover:bg-white hover:text-black" />
           </Carousel>
         </div>
       </div>

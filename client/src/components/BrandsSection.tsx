@@ -3,7 +3,7 @@ import { SiTiktok, SiInstagram } from "react-icons/si";
 
 export function BrandsSection() {
   return (
-    <section className="py-24 bg-black text-white">
+    <section className="py-24 bg-black text-white max-w-7xl mx-auto">
       {/* Main Content */}
       <div className="container mx-auto px-4">
         <motion.div
@@ -13,11 +13,11 @@ export function BrandsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Powering Brands. <span className="text-yellow-200">✨</span>{" "}
             Empowering Creators. <span className="text-yellow-300">💪</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-md md:text-md text-gray-300 max-w-4xl mx-auto">
             GRIN is the software behind today's most iconic creator programs. Are you ready to take your partnerships to the next level?
           </p>
         </motion.div>
@@ -72,8 +72,6 @@ export function BrandsSection() {
                     {[
                       { name: "Maribelle", type: "Travel • Fitness • Fashion • Beauty" },
                       { name: "Van Holmes", type: "Welcome to my world!" },
-                      { name: "Timeless Trinity", type: "Model | Mentor | Mom | Grandma" },
-                      { name: "Shae Hall", type: "Beauty, My life, Self improvement" }
                     ].map((creator, i) => (
                       <motion.div 
                         key={creator.name}
@@ -107,90 +105,6 @@ export function BrandsSection() {
                 {/* Decorative Elements */}
                 <div className="absolute -inset-4 bg-teal-400/20 blur-3xl -z-10" />
               </div>
-            </div>
-          </motion.div>
-
-          {/* Management Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="bg-teal-600 rounded-3xl p-12 text-white relative overflow-hidden"
-          >
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-4xl font-bold mb-6">
-                  Manage your entire<br />
-                  program at scale.
-                </h3>
-                <p className="text-lg text-teal-100">
-                  GRIN consolidates your entire workflow into one intuitive platform. Whether launching a product, creating an awareness campaign, or working with a celebrity, GRIN automates busywork and provides tools to integrate creator content into your overall marketing strategy.
-                </p>
-              </div>
-
-              {/* Management UI Demo */}
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-sky-100 rounded-xl p-6 text-black shadow-xl"
-              >
-                <div className="flex justify-between items-center mb-6">
-                  <h4 className="font-medium">Activations</h4>
-                  <button className="px-3 py-1 rounded bg-white/90">Manage</button>
-                </div>
-
-                <div className="space-y-3">
-                  {[
-                    { name: "Around the World", status: "In Progress" },
-                    { name: "Product Gifting", type: "Scheduled" },
-                    { name: "Product Promotion", status: "Active" },
-                    { name: "Evergreen Campaign", status: "Draft" }
-                  ].map((campaign, i) => (
-                    <motion.div
-                      key={campaign.name}
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      whileHover={{ scale: 1.02 }}
-                      viewport={{ once: true }}
-                      transition={{ 
-                        duration: 0.4, 
-                        delay: 0.4 + (i * 0.1),
-                        type: "spring"
-                      }}
-                      className="bg-white rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-md transition-shadow"
-                    >
-                      <span className="font-medium">{campaign.name}</span>
-                      <span className="text-sm text-teal-600">{campaign.status}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Analytics Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="bg-indigo-600 rounded-3xl p-12 text-white relative overflow-hidden"
-          >
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-4xl font-bold mb-6">
-                  Measure and optimize<br />
-                  your ROI.
-                </h3>
-                <p className="text-lg text-indigo-100">
-                  Get comprehensive analytics and reporting tools to track performance, measure ROI, and make data-driven decisions about your creator partnerships.
-                </p>
-              </div>
-
-              {/* Analytics Demo UI here */}
             </div>
           </motion.div>
         </div>

@@ -5,20 +5,22 @@ import { AnimatedText } from "./ui/animated-text";
 export function HeroSection() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Gradient Overlay */}
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1695148831053-77e3568234f9')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/80" />
-      </div>
+        <source src="https://grin.co/wp-content/uploads/2024/07/Creators-Hero-Desktop.webm" type="video/mp4" />
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-background/5" />
 
       {/* Content */}
-      <div className="container mx-auto px-4 pt-20 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +35,7 @@ export function HeroSection() {
           </h1>
 
           <motion.p 
-            className="text-xl md:text-2xl text-muted-foreground mb-8"
+            className="text-xl md:text-2xl text-white font-bold mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -51,23 +53,6 @@ export function HeroSection() {
               Free demo awaits
             </Button>
           </motion.div>
-        </motion.div>
-
-        {/* Studio Image */}
-        <motion.div
-          className="mt-16 relative"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1624717369155-2b748ce8f0ff"
-            alt="Creator Studio"
-            className="rounded-lg shadow-2xl mx-auto"
-          />
-          
-          {/* Neon Effect */}
-          <div className="absolute -inset-4 bg-primary/20 blur-3xl -z-10" />
         </motion.div>
       </div>
     </div>

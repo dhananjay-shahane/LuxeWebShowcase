@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
-import { SiGmail, SiMailchimp, SiOutlook, SiShopify, SiAmazon, SiWoocommerce, SiPaypal, SiSlack, SiDropbox } from 'react-icons/si';
+import { SiGmail, SiMailchimp, SiMicrosoft, SiShopify, SiAmazon, SiWoocommerce, SiPaypal, SiSlack, SiDropbox } from 'react-icons/si';
 
 const container = {
   hidden: { opacity: 0 },
@@ -66,7 +66,7 @@ export function IntegrateSection() {
                     <SiMailchimp className="w-8 h-8 text-gray-600" />
                   </div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
-                    <SiOutlook className="w-8 h-8 text-gray-600" />
+                    <SiMicrosoft className="w-8 h-8 text-gray-600" />
                   </div>
                 </div>
               </CardContent>

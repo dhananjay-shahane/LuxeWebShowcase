@@ -75,8 +75,8 @@ export function WhoWeHelpSection() {
         </motion.h2>
 
         <div className="relative">
-          <div className="overflow-x-auto pb-8 scrollbar-hide">
-            <div className="flex space-x-4 w-max">
+          <div className="overflow-x-auto pb-8 scrollbar-hide cursor-grab active:cursor-grabbing">
+            <div className="flex space-x-4 w-max select-none">
               {testimonials.map((item, index) => (
                 <div
                   key={index}

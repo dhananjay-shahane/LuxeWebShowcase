@@ -59,17 +59,21 @@ export function WhatsNewSection() {
                     transition={{ duration: 0.6, delay: index * 0.2 }}
                     className="p-2"
                   >
-                    <div className={`${article.bgColor} rounded-2xl overflow-hidden h-full`}>
+                    <div className={`${article.bgColor} rounded-2xl overflow-hidden h-[400px] flex flex-col`}>
                       <img
                         src={article.image}
                         alt={article.title}
                         className="w-full h-48 object-cover"
                       />
-                      <div className="p-6">
+                      <div className="p-6 flex flex-col justify-between flex-grow">
                         <h3 className="text-xl font-bold text-white mb-4">
                           {article.title}
                         </h3>
-                        <Button variant="outline" className="text-white border-white hover:bg-white/20">
+                        <Button 
+                          variant="outline" 
+                          className="text-white border-white hover:bg-white/20 w-full"
+                          onClick={() => window.open(`/blog/${article.title.toLowerCase().replace(/\s+/g, '-')}`, '_blank')}
+                        >
                           Read more
                         </Button>
                       </div>

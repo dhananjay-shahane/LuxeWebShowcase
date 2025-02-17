@@ -1,7 +1,7 @@
-
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import { SiGmail, SiMailchimp, SiOutlook, SiShopify, SiAmazon, SiWoocommerce, SiPaypal, SiSlack, SiDropbox } from 'react-icons/si';
 
 const container = {
   hidden: { opacity: 0 },
@@ -59,9 +59,15 @@ export function IntegrateSection() {
                   automate sequences, and track every click, open, and reply.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiGmail className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiMailchimp className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiOutlook className="w-8 h-8 text-gray-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -76,9 +82,15 @@ export function IntegrateSection() {
                   commission on sales, create co-branded landing pages and so much more.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiShopify className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiAmazon className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiWoocommerce className="w-8 h-8 text-gray-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -95,9 +107,15 @@ export function IntegrateSection() {
                   content to all your external drives, and get Slack notifications.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl"></div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiPaypal className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiSlack className="w-8 h-8 text-gray-600" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <SiDropbox className="w-8 h-8 text-gray-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>

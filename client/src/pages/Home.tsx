@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { BrandsSection } from "@/components/BrandsSection";
 import { ShoppingSection } from "@/components/ShoppingSection";
 import { IntegrateSection } from "@/components/IntegrateSection";
+import { WhoWeHelpSection } from "@/components/WhoWeHelpSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <BrandsSection />
         <ShoppingSection />
+        <WhoWeHelpSection />
         <IntegrateSection />
       </main>
     </div>

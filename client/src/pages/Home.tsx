@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { BrandsSection } from "@/components/BrandsSection";
 import { ShoppingSection } from "@/components/ShoppingSection";
+import { IntegrateSection } from "@/components/IntegrateSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <BrandsSection />
         <ShoppingSection />
+        <IntegrateSection />
       </main>
     </div>
   );

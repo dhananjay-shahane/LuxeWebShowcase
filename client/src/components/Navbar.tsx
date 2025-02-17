@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent } from "@/components/ui/navigation-menu";
 import { Menu } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 const platformItems = [
   { title: "Creator Discovery", description: "Find and connect with creators" },
@@ -15,12 +16,28 @@ const platformItems = [
 ];
 
 export function Navbar() {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+  let lastScrollY = 0;
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > lastScrollY && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+    lastScrollY = latest;
+  });
+
   return (
     <motion.header 
-      className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
+      className={cn(
+        "fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm",
+        "transition-all duration-300"
+      )}
+      initial={{ y: 0 }}
+      animate={{ y: hidden ? -100 : 0 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-8">
@@ -99,7 +116,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           {/* Desktop buttons - Only visible on large screens */}
           <Button variant="ghost" className="hidden lg:inline-flex">Login</Button>
-          <Button className="hidden lg:inline-flex">Get a demo</Button>
+          <Button className="hidden lg:inline-flex rounded-full">Get a demo</Button>
 
           {/* Mobile Menu - Only visible on small screens */}
           <Sheet>
@@ -125,7 +142,7 @@ export function Navbar() {
 
                 <div className="mt-8 space-y-4">
                   <Button variant="ghost" className="w-full justify-start">Login</Button>
-                  <Button className="w-full">Get a demo</Button>
+                  <Button className="w-full rounded-full">Get a demo</Button>
                 </div>
               </nav>
             </SheetContent>

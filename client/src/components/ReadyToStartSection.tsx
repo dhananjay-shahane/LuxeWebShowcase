@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 export function ReadyToStartSection() {
   return (
     <section className="py-24 bg-black relative">
-      <div className="container mx-auto px-4">
+      <div className="px-4">
         <div className="mx-auto relative overflow-hidden h-[80vh] flex justify-center items-center">
           {/* Background Video */}
           <video 

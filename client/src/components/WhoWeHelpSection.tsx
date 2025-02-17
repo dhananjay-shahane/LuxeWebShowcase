@@ -45,6 +45,21 @@ const testimonials = [
     logo: "https://placehold.co/120x30",
     bgColor: "bg-[#98E7FF]",
     textColor: "text-black"
+  },
+  {
+    image: "https://placehold.co/300x400",
+    logo: "https://placehold.co/120x30",
+    bgColor: "bg-gray-800",
+    textColor: "text-white"
+  },
+  
+  {
+    quote: "I can honestly say that GRIN has been my saving grace.",
+    author: "Ethan Frame",
+    role: "Influencer Marketing Manager at MVMT",
+    logo: "https://placehold.co/120x30",
+    bgColor: "bg-[#98E7FF]",
+    textColor: "text-black"
   }
 ];
 
@@ -63,7 +78,7 @@ export function WhoWeHelpSection() {
 
   return (
     <section className="py-24 bg-black">
-      <div className="container mx-auto px-4">
+      <div className="px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +95,7 @@ export function WhoWeHelpSection() {
               {testimonials.map((item, index) => (
                 <div
                   key={index}
-                  className="w-[350px] carousel-item"
+                  className="w-[250px] carousel-item"
                   onMouseEnter={() => setActiveSlide(index)}
                 >
                   <Card className={`h-[400px] ${item.bgColor} ${item.textColor} p-6 flex flex-col justify-between overflow-hidden relative rounded-xl transition-transform duration-300 hover:scale-[1.02]`}>

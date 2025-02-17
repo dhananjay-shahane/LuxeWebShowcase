@@ -57,7 +57,7 @@ export function IntegrateSection() {
                   Manage all creator comms in GRIN. Use ready-made email templates,
                   automate sequences, and track every click, open, and reply.
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://www.gstatic.com/images/branding/product/1x/gmail_48dp.png" alt="Gmail" className="w-full h-full object-contain" />
                   </div>
@@ -66,6 +66,15 @@ export function IntegrateSection() {
                   </div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b" alt="Outlook" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg" alt="Dropbox" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </CardContent>
@@ -80,7 +89,7 @@ export function IntegrateSection() {
                   Ship products to creators, create and manage discount codes, pay
                   commission on sales, create co-branded landing pages and so much more.
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-primary-logo-456baa801ee66a0a435671082365958316831c9960c480451dd0330bcdae304f.svg" alt="Shopify" className="w-full h-full object-contain" />
                   </div>
@@ -88,7 +97,10 @@ export function IntegrateSection() {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" className="w-full h-full object-contain" />
                   </div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
-                    <img src="https://woocommerce.com/wp-content/themes/woo/images/logo-woocommerce.svg" alt="WooCommerce" className="w-full h-full object-contain" />
+                    <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg" alt="Dropbox" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </CardContent>
@@ -105,9 +117,15 @@ export function IntegrateSection() {
                   Pay creators via PayPal, manage all your contacts via DocuSign, sync
                   content to all your external drives, and get Slack notifications.
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
+                    <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg" alt="Dropbox" className="w-full h-full object-contain" />
                   </div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="w-full h-full object-contain" />

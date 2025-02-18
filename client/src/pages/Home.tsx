@@ -14,9 +14,9 @@ export default function Home() {
       <main>
         <HeroSection />
         <BrandsSection />
-        <ShoppingSection />
+        {/* <ShoppingSection /> */}
         <IntegrateSection />
-        <WhoWeHelpSection />
+        {/* <WhoWeHelpSection /> */}
         <ReadyToStartSection />
       </main>
       <Footer />

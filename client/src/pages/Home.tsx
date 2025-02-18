@@ -5,6 +5,7 @@ import { ShoppingSection } from "@/components/ShoppingSection";
 import { IntegrateSection } from "@/components/IntegrateSection";
 import { WhoWeHelpSection } from "@/components/WhoWeHelpSection";
 import { ReadyToStartSection } from "@/components/ReadyToStartSection";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <WhoWeHelpSection />
         <ReadyToStartSection />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -54,7 +54,7 @@ export function IntegrateSection() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-black mb-4">Email</h3>
                 <p className="text-gray-600 mb-8">
-                  Manage all creator comms in GRIN. Use ready-made email templates,
+                  Manage all creator comms in NOVA. Use ready-made email templates,
                   automate sequences, and track every click, open, and reply.
                 </p>
                 <div className="grid grid-cols-4 gap-2">

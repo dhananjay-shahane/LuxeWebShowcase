@@ -16,7 +16,7 @@ export function Footer() {
               <span className="ml-2 text-lg">→</span>
               <span className="text-xs ml-2 opacity-70">Watch 3-min Demo</span>
             </Button>
-            <p className="text-sm text-white/60 mt-auto">© Grin Technologies Inc 2023. All rights reserved</p>
+            <p className="text-sm text-white/60 mt-auto">© Nova Technologies Inc 2023. All rights reserved</p>
           </div>
 
           {/* Navigation Links */}

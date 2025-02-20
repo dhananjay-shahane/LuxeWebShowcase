@@ -152,11 +152,14 @@ export function WhoWeHelpSection() {
                       </div>
                     )}
                     {item.image && (
-                      <div className="absolute inset-0">
-                        <img src={item.image} alt="" className="w-full h-full object-cover" />
-                      </div>
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10" />
+                        <div className="absolute inset-0">
+                          <img src={item.image} alt="" className="w-full h-full object-cover" />
+                        </div>
+                      </>
                     )}
-                    <div className="absolute bottom-6 right-6">
+                    <div className="absolute bottom-6 right-6 z-20">
                       <span className="text-sm underline">Read the case study →</span>
                     </div>
                   </Card>

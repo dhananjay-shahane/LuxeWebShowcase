@@ -81,7 +81,7 @@ export function BrandsSection() {
             <motion.div
               key={index}
               variants={cardVariants}
-              className="rounded-3xl p-6 sm:p-8 md:p-12 text-black relative overflow-hidden"
+              className="rounded-3xl p-4 sm:p-6 md:p-8 text-black relative overflow-hidden"
               style={{ backgroundColor: card.bg }}
               transition={{
                 delay: index * 0.1,
@@ -90,12 +90,12 @@ export function BrandsSection() {
                 damping: 20
               }}
             >
-              <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4">
                     {card.title}
                   </h3>
-                  <p className="text-base sm:text-lg text-gray-700">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700">
                     Unlock the industry's most comprehensive influencer discovery solution. The Creator Discovery Suite has five powerful tools designed to help you uncover, then recruit the perfect partners for your brand.
                   </p>
                 </div>

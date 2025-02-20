@@ -1,11 +1,23 @@
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { AnimatedText } from "./ui/animated-text";
+import { useState, useEffect } from "react";
 
 export function HeroSection() {
+  const [textIndex, setTextIndex] = useState(0);
+  const texts = ["Transform your", "Elevate your", "Enhance your", "Empower your"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prev) => (prev + 1) % texts.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video */}
       <video 
         autoPlay 
         loop 
@@ -16,10 +28,8 @@ export function HeroSection() {
         <source src="https://grin.co/wp-content/uploads/2024/07/Creators-Hero-Desktop.webm" type="video/mp4" />
       </video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-background/10" />
 
-      {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +38,7 @@ export function HeroSection() {
           className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
-            <AnimatedText>Transform your</AnimatedText>
+            <AnimatedText key={textIndex}>{texts[textIndex]}</AnimatedText>
             <span className="text-primary block mt-2">
               <AnimatedText>digital presence.</AnimatedText>
             </span>

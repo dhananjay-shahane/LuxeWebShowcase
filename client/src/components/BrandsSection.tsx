@@ -113,8 +113,6 @@ export function BrandsSection() {
                     <div className="flex items-center gap-4 mb-6 flex-wrap">
                       <div className="flex-1">
                         <div className="bg-white rounded-lg px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
-                          <span>Creator Search</span>
-                          <span className="text-gray-400 hidden sm:inline">|</span>
                           <span className="text-gray-400">#festivals</span>
                         </div>
                       </div>
@@ -127,14 +125,14 @@ export function BrandsSection() {
                     {/* Creator Cards */}
                     <div className="space-y-3">
                       {[
-                        { name: "Maribelle", type: "Travel • Fitness • Fashion • Beauty" },
-                        { name: "Van Holmes", type: "Welcome to my world!" },
+                        { name: "Maribelle", type: "Travel • Fitness • Fashion • Beauty", stats: { followers: "80.7K", engagement: "6.7%", posts: "9K" } },
+                        { name: "Van Holmes", type: "Welcome to my world!", stats: { followers: "80.7K", engagement: "6.7%", posts: "9K" } },
                       ].map((creator, i) => (
                         <motion.div 
                           key={creator.name}
                           initial={{ opacity: 0, x: 20 }}
                           whileInView={{ opacity: 1, x: 0 }}
-                          whileHover={{ scale: 1.02, x: 10 }}
+                          whileHover={{ scale: 1.02 }}
                           viewport={{ once: true }}
                           transition={{ 
                             duration: 0.4, 
@@ -142,17 +140,17 @@ export function BrandsSection() {
                             type: "spring",
                             stiffness: 300
                           }}
-                          className="bg-white/5 hover:bg-white/10 rounded-lg p-3 sm:p-4 flex items-center gap-2 sm:gap-4 cursor-pointer group"
+                          className="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center gap-4 cursor-pointer"
                         >
-                          <div className="w-10 h-10 bg-white/10 rounded-full" />
+                          <div className="w-12 h-12 bg-white/20 rounded-full flex-shrink-0" />
                           <div className="flex-1 min-w-0">
-                            <div className="text-white font-medium truncate">{creator.name}</div>
-                            <div className="text-white/60 text-sm truncate">{creator.type}</div>
+                            <div className="text-white font-medium text-lg">{creator.name}</div>
+                            <div className="text-white/60 text-sm">{creator.type}</div>
                           </div>
-                          <div className="flex gap-4 text-white/80">
-                            <span>80.7K</span>
-                            <span>6.7%</span>
-                            <span>9K</span>
+                          <div className="flex gap-6 text-white">
+                            <span>{creator.stats.followers}</span>
+                            <span>{creator.stats.engagement}</span>
+                            <span>{creator.stats.posts}</span>
                           </div>
                         </motion.div>
                       ))}

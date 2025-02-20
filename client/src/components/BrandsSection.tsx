@@ -90,25 +90,25 @@ export function BrandsSection() {
                 damping: 20
               }}
             >
-              <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
-                <div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4">
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 sm:gap-6 items-start">
+                <div className="w-full">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 md:mb-3">
                     {card.title}
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-700">
+                  <p className="text-sm md:text-base text-gray-700 max-w-prose">
                     Unlock the industry's most comprehensive influencer discovery solution. The Creator Discovery Suite has five powerful tools designed to help you uncover, then recruit the perfect partners for your brand.
                   </p>
                 </div>
 
                 {/* Animated Demo Block */}
                 <motion.div 
-                  className="relative"
+                  className="relative w-full"
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4, type: "spring" }}
                 >
-                  <div className="bg-teal-600 rounded-xl p-6 shadow-xl">
+                  <div className="bg-teal-600 rounded-xl p-3 sm:p-4 md:p-6 shadow-xl">
                     {/* Search Header */}
                     <div className="flex items-center gap-4 mb-6 flex-wrap">
                       <div className="flex-1">
@@ -142,7 +142,7 @@ export function BrandsSection() {
                             type: "spring",
                             stiffness: 300
                           }}
-                          className="bg-white/5 hover:bg-white/10 rounded-lg p-4 flex items-center gap-4 cursor-pointer group"
+                          className="bg-white/5 hover:bg-white/10 rounded-lg p-3 sm:p-4 flex items-center gap-2 sm:gap-4 cursor-pointer group"
                         >
                           <div className="w-10 h-10 bg-white/10 rounded-full" />
                           <div className="flex-1 min-w-0">

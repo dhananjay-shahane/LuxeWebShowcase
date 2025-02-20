@@ -5,59 +5,58 @@ import { Card } from "./ui/card";
 
 const testimonials = [
   {
-    quote: "I can't even imagine going back to a time before GRIN.",
-    role: "Former Senior Marketing Manager at Hopster",
-    logo: "https://placehold.co/50x50",
+    quote: "NOVA has transformed our digital marketing strategy completely.",
+    role: "Marketing Director at TechFlow",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop",
     bgColor: "bg-blue-900",
     textColor: "text-white"
   },
   {
     stats: {
-      title: "Uber",
-      labels: ["Slay", "Serve"],
-      image: "https://placehold.co/300x400"
+      title: "StreamVibe",
+      labels: ["Creator", "Innovation"],
+      image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=400&fit=crop"
     },
     bgColor: "bg-gray-900",
     textColor: "text-white"
   },
   {
     stats: {
-      title: "IN LESS THAN 2 YEARS",
+      title: "SUCCESS IN 6 MONTHS",
       metrics: [
-        { value: "~300", label: "active creators per season" },
-        { value: "8,000+", label: "pieces of creator content" },
-        { value: "12.9m+", label: "impressions" }
+        { value: "500+", label: "active creators monthly" },
+        { value: "15,000+", label: "content pieces created" },
+        { value: "25m+", label: "total reach" }
       ]
     },
     bgColor: "bg-[#E8FF81]",
     textColor: "text-black"
   },
   {
-    image: "https://placehold.co/300x400",
-    logo: "https://placehold.co/120x30",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300&h=400&fit=crop",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
     bgColor: "bg-gray-800",
     textColor: "text-white"
   },
   {
-    quote: "I can honestly say that GRIN has been my saving grace.",
-    author: "Ethan Frame",
-    role: "Influencer Marketing Manager at MVMT",
-    logo: "https://placehold.co/120x30",
+    quote: "The AI-powered analytics have given us unprecedented insights.",
+    author: "Sarah Chen",
+    role: "Growth Lead at FutureScale",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
     bgColor: "bg-[#98E7FF]",
     textColor: "text-black"
   },
   {
-    image: "https://placehold.co/300x400",
-    logo: "https://placehold.co/120x30",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=400&fit=crop",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
     bgColor: "bg-gray-800",
     textColor: "text-white"
   },
-  
   {
-    quote: "I can honestly say that GRIN has been my saving grace.",
-    author: "Ethan Frame",
-    role: "Influencer Marketing Manager at MVMT",
-    logo: "https://placehold.co/120x30",
+    quote: "NOVA's platform has revolutionized our creator partnerships.",
+    author: "Michael Torres",
+    role: "Creative Director at PixelPerfect",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
     bgColor: "bg-[#98E7FF]",
     textColor: "text-black"
   }

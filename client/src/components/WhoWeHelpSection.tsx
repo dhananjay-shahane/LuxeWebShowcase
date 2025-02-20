@@ -54,7 +54,7 @@ const testimonials = [
     quote: "The AI-powered analytics have given us unprecedented insights.",
     author: "Sarah Chen",
     role: "Growth Lead at FutureScale",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop",
     bgColor: "bg-[#98E7FF]",
     textColor: "text-black"
   },
@@ -68,7 +68,7 @@ const testimonials = [
     quote: "NOVA's platform has revolutionized our creator partnerships.",
     author: "Michael Torres",
     role: "Creative Director at PixelPerfect",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=30&fit=crop",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop",
     bgColor: "bg-[#98E7FF]",
     textColor: "text-black"
   }
@@ -111,8 +111,8 @@ export function WhoWeHelpSection() {
                 >
                   <Card className={`h-[400px] ${item.bgColor} ${item.textColor} p-6 flex flex-col justify-between overflow-hidden relative rounded-xl transition-transform duration-300 hover:scale-[1.02]`}>
                     {item.logo && (
-                      <div className="absolute top-6 right-6">
-                        <img src={item.logo} alt="Logo" className="h-8" />
+                      <div className="absolute top-6  right-6">
+                        <img src={item.logo} alt="Logo" className="h-8 rounded-full" />
                       </div>
                     )}
                     {item.quote && (

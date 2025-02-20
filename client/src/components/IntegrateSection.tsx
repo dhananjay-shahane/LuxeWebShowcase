@@ -57,7 +57,7 @@ export function IntegrateSection() {
                   Manage all creator comms in GRIN. Use ready-made email templates,
                   automate sequences, and track every click, open, and reply.
                 </p>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://www.gstatic.com/images/branding/product/1x/gmail_48dp.png" alt="Gmail" className="w-full h-full object-contain" />
                   </div>
@@ -89,7 +89,7 @@ export function IntegrateSection() {
                   Ship products to creators, create and manage discount codes, pay
                   commission on sales, create co-branded landing pages and so much more.
                 </p>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-primary-logo-456baa801ee66a0a435671082365958316831c9960c480451dd0330bcdae304f.svg" alt="Shopify" className="w-full h-full object-contain" />
                   </div>
@@ -117,7 +117,7 @@ export function IntegrateSection() {
                   Pay creators via PayPal, manage all your contacts via DocuSign, sync
                   content to all your external drives, and get Slack notifications.
                 </p>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl p-2">
                     <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" className="w-full h-full object-contain" />
                   </div>

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           {/* Left section with logo and demo button */}
           <div className="flex flex-col gap-4">
-            {/* <img src="/logo.svg" alt="GRIN" className="h-8" /> */}
+            <h1 className="text-2xl font-bold text-white">NOVA<span className="text-primary">.</span></h1>
             
             <Button variant="outline" className="rounded-full border-white text-white hover:bg-white hover:text-black w-fit">
               See how it works

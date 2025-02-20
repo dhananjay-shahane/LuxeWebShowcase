@@ -16,7 +16,7 @@ export default function Home() {
         <BrandsSection />
         {/* <ShoppingSection /> */}
         <IntegrateSection />
-        {/* <WhoWeHelpSection /> */}
+        <WhoWeHelpSection />
         <ReadyToStartSection />
       </main>
       <Footer />

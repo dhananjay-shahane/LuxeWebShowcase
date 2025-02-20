@@ -51,7 +51,7 @@ export function BrandsSection() {
   ];
 
   return (
-    <section ref={containerRef} className="py-24 bg-black text-white max-w-7xl mx-auto">
+    <section ref={containerRef} className="py-12 bg-black text-white max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -110,11 +110,11 @@ export function BrandsSection() {
                 >
                   <div className="bg-teal-600 rounded-xl p-6 shadow-xl">
                     {/* Search Header */}
-                    <div className="flex items-center gap-4 mb-6">
+                    <div className="flex items-center gap-4 mb-6 flex-wrap">
                       <div className="flex-1">
-                        <div className="bg-white rounded-lg px-4 py-3 flex items-center gap-3">
+                        <div className="bg-white rounded-lg px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
                           <span>Creator Search</span>
-                          <span className="text-gray-400">|</span>
+                          <span className="text-gray-400 hidden sm:inline">|</span>
                           <span className="text-gray-400">#festivals</span>
                         </div>
                       </div>

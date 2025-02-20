@@ -147,16 +147,16 @@ export function Navbar() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full p-0 bg-background/95 backdrop-blur-sm">
+            <SheetContent side="left" className="w-full max-w-[400px] p-0 bg-background">
               <nav className="flex flex-col h-full">
-                <div className="p-6">
+                <div className="p-6 flex justify-between items-center border-b">
                   <a href="/" className="text-2xl font-bold">
                     NOVA
                   </a>
                 </div>
                 
                 <motion.div
-                  className="flex-1 py-8"
+                  className="flex-1"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.2 }}
@@ -167,16 +167,16 @@ export function Navbar() {
                     { title: "Customers", href: "#" },
                     { title: "Resources", href: "#" },
                     { title: "Company", href: "#" },
-                  ].map((item) => (
+                  ].map((item, index) => (
                     <motion.div
                       key={item.title}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.2 }}
+                      transition={{ duration: 0.2, delay: index * 0.1 }}
                     >
                       <a
                         href={item.href}
-                        className="flex items-center justify-between px-6 py-4 text-xl font-medium hover:bg-accent/50"
+                        className="flex items-center justify-between px-6 py-5 text-lg font-medium hover:bg-accent/50 border-b border-border/50"
                       >
                         {item.title}
                       </a>
@@ -184,7 +184,7 @@ export function Navbar() {
                   ))}
                 </motion.div>
 
-                <div className="p-6 border-t">
+                <div className="p-6 border-t mt-auto">
                   <div className="space-y-4">
                     <Button variant="ghost" className="w-full justify-start text-lg">
                       Login

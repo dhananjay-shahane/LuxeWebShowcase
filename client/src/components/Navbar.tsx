@@ -147,51 +147,52 @@ export function Navbar() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col gap-4 mt-8">
+            <SheetContent side="right" className="w-full p-0 bg-background/95 backdrop-blur-sm">
+              <nav className="flex flex-col h-full">
+                <div className="p-6">
+                  <a href="/" className="text-2xl font-bold">
+                    NOVA
+                  </a>
+                </div>
+                
                 <motion.div
-                  className="space-y-4"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, staggerChildren: 0.1 }}
+                  className="flex-1 py-8"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2 }}
                 >
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start text-lg"
-                  >
-                    Platform
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start text-lg"
-                  >
-                    Solutions
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start text-lg"
-                  >
-                    Customers
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start text-lg"
-                  >
-                    Resources
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="w-full justify-start text-lg"
-                  >
-                    Company
-                  </Button>
+                  {[
+                    { title: "Platform", href: "#" },
+                    { title: "Solutions", href: "#" },
+                    { title: "Customers", href: "#" },
+                    { title: "Resources", href: "#" },
+                    { title: "Company", href: "#" },
+                  ].map((item) => (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <a
+                        href={item.href}
+                        className="flex items-center justify-between px-6 py-4 text-xl font-medium hover:bg-accent/50"
+                      >
+                        {item.title}
+                      </a>
+                    </motion.div>
+                  ))}
                 </motion.div>
 
-                <div className="mt-8 space-y-4">
-                  <Button variant="ghost" className="w-full justify-start">
-                    Login
-                  </Button>
-                  <Button className="w-full rounded-full">Get a demo</Button>
+                <div className="p-6 border-t">
+                  <div className="space-y-4">
+                    <Button variant="ghost" className="w-full justify-start text-lg">
+                      Login
+                    </Button>
+                    <Button className="w-full rounded-full text-lg">
+                      Get a demo
+                    </Button>
+                  </div>
                 </div>
               </nav>
             </SheetContent>

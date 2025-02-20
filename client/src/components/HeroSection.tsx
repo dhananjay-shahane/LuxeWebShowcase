@@ -1,8 +1,21 @@
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { AnimatedText } from "./ui/animated-text";
+import { useState, useEffect } from "react";
 
 export function HeroSection() {
+  const [textIndex, setTextIndex] = useState(0);
+  const texts = ["Transform your", "Elevate your", "Enhance your", "Empower your"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prev) => (prev + 1) % texts.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <video 
@@ -25,7 +38,7 @@ export function HeroSection() {
           className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
-            <AnimatedText>Transform your</AnimatedText>
+            <AnimatedText key={textIndex}>{texts[textIndex]}</AnimatedText>
             <span className="text-primary block mt-2">
               <AnimatedText>digital presence.</AnimatedText>
             </span>

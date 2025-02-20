@@ -61,11 +61,11 @@ export function BrandsSection() {
           className="text-center mb-8 md:mb-12 px-4"
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6">
-            Powering Brands. <span className="text-yellow-200">✨</span>{" "}
-            Empowering Creators. <span className="text-yellow-300">💪</span>
+            AI Solutions. <span className="text-yellow-200">🤖</span>{" "}
+            Smart Business. <span className="text-yellow-300">🚀</span>
           </h2>
           <p className="text-sm sm:text-md md:text-md text-gray-300 max-w-4xl mx-auto">
-            GRIN is the software behind today's most iconic creator programs. Are you ready to take your partnerships to the next level?
+            NOVA is the cutting-edge AI platform powering tomorrow's innovative businesses. Ready to revolutionize your workflow?
           </p>
         </motion.div>
 

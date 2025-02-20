@@ -30,15 +30,15 @@ export function IntegrateSection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            Integrate with{" "}
+            Connect with{" "}
             <span className="relative inline-block">
-              <span className="text-[#c2ff8d]">everything</span>
+              <span className="text-[#c2ff8d]">intelligence</span>
               <span className="absolute bottom-0 left-0 w-full h-1 bg-[#c2ff8d]"></span>
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
-            No more bouncing between social platforms, ecommerce software, and email
-            inboxes. GRIN brings everything you need to run your program under one roof.
+            Seamlessly integrate AI capabilities into your existing workflow. NOVA
+            connects with your favorite tools to bring intelligent automation everywhere.
           </p>
         </motion.div>
 

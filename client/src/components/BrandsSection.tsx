@@ -90,12 +90,12 @@ export function BrandsSection() {
                 damping: 20
               }}
             >
-              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 sm:gap-6 items-start">
+              <div className="flex flex-col lg:grid text-white lg:grid-cols-2 gap-4 sm:gap-6 items-start">
                 <div className="w-full">
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 md:mb-3">
+                  <h3 className="text-lg sm:text-2xl md:text-4xl mb-2 md:mb-3 text-black">
                     {card.title}
                   </h3>
-                  <p className="text-sm md:text-base text-gray-700 max-w-prose">
+                  <p className="text-lg md:text-xl text-black max-w-prose">
                     Unlock the industry's most comprehensive influencer discovery solution. The Creator Discovery Suite has five powerful tools designed to help you uncover, then recruit the perfect partners for your brand.
                   </p>
                 </div>

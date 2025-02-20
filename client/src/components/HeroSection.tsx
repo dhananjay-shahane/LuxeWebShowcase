@@ -28,9 +28,9 @@ export function HeroSection() {
           className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
-            <AnimatedText>Grow your</AnimatedText>
+            <AnimatedText>Transform your</AnimatedText>
             <span className="text-primary block mt-2">
-              <AnimatedText>community.</AnimatedText>
+              <AnimatedText>digital presence.</AnimatedText>
             </span>
           </h1>
 
@@ -40,8 +40,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Get more than just influencer marketing software.
-            Build and scale a world-class creator program with GRIN.
+            Elevate your brand with cutting-edge AI solutions.
+            Discover the power of intelligent automation with NOVA.
           </motion.p>
 
           <motion.div

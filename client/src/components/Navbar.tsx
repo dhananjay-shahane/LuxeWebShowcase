@@ -48,7 +48,7 @@ export function Navbar() {
       animate={{ y: hidden ? -100 : 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="container bg-background/80 backdrop-blur-sm max-w-7xl  mx-auto h-25 flex items-center justify-between border rounded-full px-4 py-6">
+      <div className="container bg-background/80 backdrop-blur-sm max-w-7xl mx-auto h-25 flex items-center justify-between border rounded-full px-3 sm:px-4 py-4 sm:py-6 mx-2 sm:mx-auto">
         {/* logo section */}
         <a href="/" className="text-2xl font-bold">
           GRIN

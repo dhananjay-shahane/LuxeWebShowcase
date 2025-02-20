@@ -47,7 +47,7 @@ export function IntegrateSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
         >
           <motion.div variants={item}>
             <Card className="bg-white rounded-2xl h-full">

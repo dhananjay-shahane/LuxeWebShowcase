@@ -60,7 +60,7 @@ export function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors">
+                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors data-[state=open]:bg-transparent">
                   Platform
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -85,7 +85,7 @@ export function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors">
+                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors data-[state=open]:bg-transparent">
                   Solutions
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -113,17 +113,17 @@ export function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors">
+                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors data-[state=open]:bg-transparent">
                   Customers
                 </NavigationMenuTrigger>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors">
+                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors data-[state=open]:bg-transparent">
                   Resources
                 </NavigationMenuTrigger>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors">
+                <NavigationMenuTrigger className="px-4 py-2 hover:text-primary transition-colors data-[state=open]:bg-transparent">
                   Company
                 </NavigationMenuTrigger>
               </NavigationMenuItem>
@@ -154,7 +154,7 @@ export function Navbar() {
                     NOVA
                   </a>
                 </div>
-                
+
                 <motion.div
                   className="flex-1"
                   initial={{ opacity: 0 }}

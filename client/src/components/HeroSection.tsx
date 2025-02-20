@@ -27,7 +27,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6"> {/* Adjusted font sizes for better responsiveness */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <AnimatedText>Grow your</AnimatedText>
             <span className="text-primary block mt-2">
               <AnimatedText>community.</AnimatedText>
@@ -35,7 +35,7 @@ export function HeroSection() {
           </h1>
 
           <motion.p 
-            className="text-base md:text-xl lg:text-2xl text-white font-bold mb-8"  {/* Adjusted font sizes for better responsiveness */}
+            className="text-xl md:text-2xl text-white font-bold mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

@@ -133,7 +133,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           {/* Desktop buttons - Only visible on large screens */}
-          <Button variant="ghost" className="hidden md:inline-flex">
+          <Button variant="ghost" className="hidden lg:inline-flex">
             Login
           </Button>
           <Button className="hidden lg:inline-flex rounded-full">

@@ -59,7 +59,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Button size="lg" className="text-lg px-8">
+            <Button size="lg" className="text-lg px-8 py-6 h-14 rounded-full">
               Free demo awaits
             </Button>
           </motion.div>

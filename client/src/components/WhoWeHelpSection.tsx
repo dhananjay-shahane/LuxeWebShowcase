@@ -5,6 +5,18 @@ import { Card } from "./ui/card";
 
 const testimonials = [
   {
+    stats: {
+      title: "GROWTH IN 3 MONTHS",
+      metrics: [
+        { value: "850+", label: "influencer collaborations" },
+        { value: "45M+", label: "total engagement" },
+        { value: "3.2x", label: "ROI increase" }
+      ]
+    },
+    bgColor: "bg-[#FF80BF]",
+    textColor: "text-black"
+  },
+  {
     quote: "NOVA has transformed our digital marketing strategy completely.",
     role: "Marketing Director at TechFlow",
     logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop",
